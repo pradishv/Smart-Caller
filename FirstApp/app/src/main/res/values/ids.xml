@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="ImageView" type="id">aa</item>
+    <item name="Name" type="id">Name</item>
+    <item name="listView2" type="id">listView2</item>
+    <item name="textView14" type="id">textView14</item>
+    <item name="imageView" type="id">dd</item>
+    <item name="textView18" type="id">ss</item>
+    <item name="scrollview" type="id">dx</item>
+    <item name="fulname" type="id">cd</item>
+    <item name="mailorno" type="id">cs</item>
+    <item name="textView5" type="id">ca</item>
+    <item name="textView6" type="id">cb</item>
+    <item name="textView7" type="id">vv</item>
+    <item name="pass1" type="id">jh</item>
+    <item name="pass2" type="id">jn</item>
+    <item name="createac" type="id">jh</item>
+    <item name="textView9" type="id">kl</item>
+    <item name="rgroup" type="id">pl</item>
+    <item name="male" type="id">ol</item>
+    <item name="female" type="id">hb</item>
+    <item name="textView16" type="id">jm</item>
+    <item name="textView10" type="id">pp</item>
+    <item name="bcam" type="id">bb</item>
+    <item name="bgal" type="id">mn</item>
+    <item name="button2" type="id">mn</item>
+    <item name="button3" type="id">mn</item>
+    <item name="textView19" type="id">c</item>
+    <item name="mobile" type="id">dd</item>
+</resources>

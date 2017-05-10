@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hp.firstapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <protected-broadcast android:name="android.intent.action.PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <permission
+        android:name="android.permission.READ_PHONE_STATE"
+        android:permissionGroup="android.permission-group.PHONE"
+        android:protectionLevel="dangerous" />
+    <!--
+         Allows an application to initiate a phone call without going through
+        the Dialer user interface for the user to confirm the call.
+        <p>Protection level: dangerous
+    -->
+    <permission
+        android:name="android.permission.CALL_PHONE"
+        android:permissionFlags="costsMoney"
+        android:permissionGroup="android.permission-group.PHONE"
+        android:protectionLevel="dangerous" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <receiver android:name=".PhoneCallReceiver">
+            <intent-filter android:priority="100">
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".loginsuccess" />
+        <activity android:name=".loginform" />
+        <activity android:name=".signupform" />
+        <activity android:name=".cc" />
+        <activity android:name=".MyCallControllerActivity" />
+        <activity android:name=".friend" />
+        <activity android:name=".myfriends"></activity>
+    </application>
+
+</manifest>
